@@ -2,6 +2,9 @@ let boxes = document.querySelectorAll('.box');
 let flag = 1 ;//  1 for X , 0 for O
 clearBoard();
 
+currentplayer = document.querySelector('.currentplayerSign');
+currentplayer.innerText ='X';
+// currentplayer.style.color = 'red'
 
 function clearBoard(){
     flag = 1;
@@ -63,6 +66,7 @@ function checkForWin(){
         updateScore(boxes[2].innerText);
         clearBoard();
     }     
+    updateCurrentplayer();
 }
 
 function updateScore(sign){
@@ -73,5 +77,15 @@ function updateScore(sign){
     else {
         oscoreINT++;
         oscore.innerText = oscoreINT;
+    }
+}
+function updateCurrentplayer(){
+    if (flag == 1 ) {
+        currentplayer.innerText = 'X';
+        currentplayer.style.color = 'red'
+    }
+
+    else { currentplayer.innerText = 'O';
+        currentplayer.style.color = 'blue'
     }
 }

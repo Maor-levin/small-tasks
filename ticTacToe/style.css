@@ -38,6 +38,11 @@ body{
     text-align: center;
     border: solid black 2px;
 }
+.currentPlayer{
+    border: solid black 2px;
+    font-size: 20px;
+    padding: 0 9px
+}
 .box{
 height: 150px;
 width: 150px;
@@ -48,4 +53,9 @@ justify-content: center;
 font-weight: 800;
 font-size: 80px;
 border: solid black 2px;
+}
+
+.currentplayerSign{
+    text-align: center;
+    font-size: 30px;
 }
