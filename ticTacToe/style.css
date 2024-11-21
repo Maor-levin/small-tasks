@@ -1,17 +1,17 @@
-* {
-    border: 1px solid red;
-}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: double black 5px;
 }
 .gameBorder{
     height: 450px;
     width: 450px;
     flex-wrap: wrap;
     display: flex;
+    border: solid black 2px;
 }
 .title{
     padding: 70px;
@@ -19,12 +19,14 @@ body{
     font-weight: 700;
 }
 .scores{
+
     display: flex;
 }
 .playerX, .playerO{
     padding: 0 40px;
     font-size: 25px;
     font-weight: 800;
+    border: solid black 2px;
 }
 .playerX{
     color: red;
@@ -34,6 +36,7 @@ body{
 }
 .xscore, .oscore{
     text-align: center;
+    border: solid black 2px;
 }
 .box{
 height: 150px;
@@ -44,4 +47,5 @@ align-items: center;
 justify-content: center;
 font-weight: 800;
 font-size: 80px;
+border: solid black 2px;
 }
