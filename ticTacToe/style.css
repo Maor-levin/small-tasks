@@ -1,0 +1,47 @@
+* {
+    border: 1px solid red;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gameBorder{
+    height: 450px;
+    width: 450px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.title{
+    padding: 70px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.scores{
+    display: flex;
+}
+.playerX, .playerO{
+    padding: 0 40px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.playerX{
+    color: red;
+}
+.playerO{
+    color: blue;
+}
+.xscore, .oscore{
+    text-align: center;
+}
+.box{
+height: 150px;
+width: 150px;
+box-sizing: border-box;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 800;
+font-size: 80px;
+}
